@@ -1,0 +1,19 @@
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: black;
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+}
