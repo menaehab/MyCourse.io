@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -89,7 +90,7 @@
     </div>
   </nav>
 
-  <section id="carousel">
+  <section id="hero">
     <div class="container mt-3">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -99,7 +100,7 @@
               <h3>Go further in web development</h3>
               <p>Subscribe to a collection of our top courses.
               </p>
-              <button class="btn btn-primary">Try it free</button>
+              <a href="#" class="btn btn-primary">Try it free</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -116,7 +117,7 @@
               <h3>Learn something new every day</h3>
               <p>Become professional and ready to join the world.
               </p>
-              <button class="btn btn-primary">Explore</button>
+              <a href="#" class="btn btn-primary">Explore</a>
             </div>
           </div>
         </div>
@@ -124,8 +125,41 @@
     </div>
   </section>
 
+  <section id="categories">
+    <div class="container mt-3">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-primary rounded-4">Recommendation</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">illustrator</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">Photoshop</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">UI Design</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">Front-End</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">Back-End</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">React js</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="btn btn-outline-secondary rounded-4">Vue js</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./scripts/layout.js"></script>
   <script src="scripts/index.js"></script>
