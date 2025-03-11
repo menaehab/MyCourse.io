@@ -78,6 +78,10 @@ a {
   color: white !important;
 }
 
+.card {
+  border: none;
+}
+
 /* Navbar Start */
 .navbar {
   background-color: #fff;
