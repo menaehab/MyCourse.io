@@ -20,11 +20,15 @@
   object-fit: cover;
 }
 
+.carousel-caption h3 {
+  font-size: 1.2rem;
+}
+
 /* Hero section End */
 
 /* Categories section Start */
 
-.swiper-slide .btn {
+.card .btn {
   margin: 0;
   padding: 5px 10px;
   width: 100%;
@@ -35,7 +39,7 @@
 
 /* recommended section Start */
 
-.recommended-title {
+.section-title {
   font-weight: bold;
   font-size: 1.4rem;
   margin: 0;
@@ -43,7 +47,7 @@
   text-align: left;
 }
 
-.recommended-subtitle {
+.section-subtitle {
   font-size: 0.9rem;
   margin: 0;
   padding: 0;
@@ -77,11 +81,11 @@
   position: relative;
 }
 
-.swiper-slide img {
+.card img {
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.swiper-slide:hover img {
+.card:hover img {
   filter: blur(4px);
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -113,12 +117,16 @@
   -o-transition: 0.3s;
 }
 
+.card-title {
+  font-size: 1.1rem;
+}
+
 .card-btn:hover {
   background-color: #00b49b !important;
   border-color: #00a38c !important;
 }
 
-.swiper-slide:hover .card-btn {
+.card:hover .card-btn {
   opacity: 1;
 }
 
