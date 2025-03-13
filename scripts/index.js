@@ -68,7 +68,7 @@ const trendingData = [
     image: "./imgs/courses/course-6.png",
     description:
       "Deep dive into JavaScript and master the language with real-world projects.",
-    rating: 4.3,
+    rating: 3.3,
     price: 39.99,
     discounted_price: 29.99,
     reviewers: 1.7
@@ -80,7 +80,7 @@ const trendingData = [
     image: "./imgs/courses/course-7.png",
     description:
       "Learn the core principles of graphic design and create stunning visuals.",
-    rating: 4.6,
+    rating: 5,
     price: 35.99,
     discounted_price: 27.99,
     reviewers: 2.1
@@ -92,7 +92,7 @@ const trendingData = [
     image: "./imgs/courses/course-8.png",
     description:
       "Explore the world of AI and Machine Learning with hands-on projects and real-world applications.",
-    rating: 4.9,
+    rating: 4,
     price: 59.99,
     discounted_price: 45.99,
     reviewers: 3.2
@@ -116,7 +116,7 @@ const trendingData = [
     image: "./imgs/courses/course-10.png",
     description:
       "Discover effective digital marketing techniques to grow your business online.",
-    rating: 4.7,
+    rating: 2.7,
     price: 38.99,
     discounted_price: 29.99,
     reviewers: 2.3
@@ -128,7 +128,7 @@ const trendingData = [
     image: "./imgs/courses/course-11.png",
     description:
       "Start your journey in game development and create interactive games using Unity.",
-    rating: 4.5,
+    rating: 3,
     price: 49.99,
     discounted_price: 39.99,
     reviewers: 1.9
@@ -140,10 +140,37 @@ const trendingData = [
     image: "./imgs/courses/course-12.png",
     description:
       "Master front-end and back-end technologies to become a full-stack web developer.",
-    rating: 4.8,
+    rating: 3.8,
     price: 55.99,
     discounted_price: 42.99,
-    reviewers: 2.8
+    reviewers: 3
+  }
+];
+
+const instructorsData = [
+  {
+    id: 1,
+    name: "John Doe",
+    job: "Film Maker",
+    image: "./imgs/instructor/Instructor-1.png"
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    job: "Graphic Designer",
+    image: "./imgs/instructor/instructor-2.png"
+  },
+  {
+    id: 3,
+    name: "Bob Johnson",
+    job: "Web Developer",
+    image: "./imgs/instructor/instructor-3.png"
+  },
+  {
+    id: 4,
+    name: "Emily Davis",
+    job: "Photographer",
+    image: "./imgs/instructor/instructor-4.png"
   }
 ];
 
@@ -254,5 +281,24 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `;
     trendingCoursesContainer.innerHTML += trendingCard;
+  });
+
+  const InstructorContainer = document.querySelector(".instructor-container");
+
+  instructorsData.forEach((instructor) => {
+    const InstructorCard = `
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="instructor-card">
+            <div class="image-container">
+              <img src="${instructor.image}" alt="${instructor.name}">
+              <div class="instructor-info">
+                <h5>${instructor.name}</h5>
+                <p>${instructor.job}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  `;
+    InstructorContainer.innerHTML += InstructorCard;
   });
 });
