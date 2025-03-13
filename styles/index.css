@@ -137,6 +137,7 @@
 /* recommended section End */
 
 /* Instructor section Start */
+
 .image-container {
   position: relative;
   width: 100%;
@@ -178,3 +179,61 @@
 }
 
 /* Instructor section End */
+
+/* news-letter Start */
+
+.news-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  background-image: url("../imgs/news-letter.png");
+  background-size: cover;
+  background-color: #2273d1;
+  color: white;
+  border-radius: 10px;
+}
+
+.news-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-input {
+  display: flex;
+  align-items: center;
+  background-color: #629bdd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.news-input input {
+  border: none;
+  outline: none;
+  background-color: #629bdd;
+  padding: 4px 6px;
+  width: 100%;
+  max-width: 250px;
+  min-width: 125px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .news-input input {
+    max-width: 100%;
+  }
+}
+
+.news-input input::placeholder {
+  color: #dfdfdf;
+}
+
+.news-input i {
+  color: white;
+  cursor: pointer;
+}
+
+/* news-letter End */
