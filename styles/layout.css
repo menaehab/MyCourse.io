@@ -205,3 +205,12 @@ a {
 }
 
 /* Navbar End */
+
+/* Footer Start */
+
+.footer-color {
+  background-color: #1b1b1b;
+  color: rgb(223, 223, 223) !important;
+}
+
+/* Footer End */
