@@ -35,6 +35,10 @@
   text-align: center;
 }
 
+.btn-categories {
+  min-width: 110px;
+}
+
 /* Categories section End */
 
 /* recommended section Start */
