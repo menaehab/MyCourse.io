@@ -178,7 +178,7 @@ const stars = (rating) => {
   const fullStars = Math.floor(rating);
   const halfStar = rating % 1 !== 0 ? 1 : 0;
   const emptyStars = 5 - fullStars - halfStar;
-
+  /* Stars icons  */
   return (
     '<i class="fa-solid fa-star text-warning"></i>'.repeat(fullStars) +
     '<i class="fa-solid fa-star-half-alt text-warning"></i>'.repeat(halfStar) +
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const recommendedWrapper = document.querySelector(
     ".recommended-swiper .swiper-wrapper"
   );
-
+  /* Card for recommended with slide */
   recommendedData.forEach((course) => {
     const recommendedCard = `
       <div class="swiper-slide">
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const trendingCoursesContainer = document.querySelector(
     ".recommended-container"
   );
-
+  /* Card for recommended with without slide */
   trendingData.forEach((course) => {
     const trendingCard = `
       <div class="col-lg-3 col-md-6 col-sm-12">

@@ -214,3 +214,135 @@ a {
 }
 
 /* Footer End */
+
+/* news-letter Start */
+
+.news-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  background-image: url("../imgs/news-letter.png");
+  background-size: cover;
+  background-color: #2273d1;
+  color: white;
+  border-radius: 10px;
+}
+
+.news-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-input {
+  display: flex;
+  align-items: center;
+  background-color: #629bdd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.news-input input {
+  border: none;
+  outline: none;
+  background-color: #629bdd;
+  padding: 4px 6px;
+  width: 100%;
+  max-width: 250px;
+  min-width: 125px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .news-input input {
+    max-width: 100%;
+  }
+}
+
+.news-input input::placeholder {
+  color: #dfdfdf;
+}
+
+.news-input i {
+  color: white;
+  cursor: pointer;
+}
+
+/* news-letter End */
+
+/* Card Start */
+.card-instructor span {
+  font-size: 0.9rem;
+  color: #00ddc0;
+}
+
+.discounted-price {
+  font-size: 1.2rem;
+}
+
+.original-price {
+  font-size: 0.9rem;
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card img {
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  filter: blur(4px);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.card-btn {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ddc0;
+  border-color: #00ddc0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.card-title {
+  font-size: 1.1rem;
+}
+
+.card-btn:hover {
+  background-color: #00b49b !important;
+  border-color: #00a38c !important;
+}
+
+.card:hover .card-btn {
+  opacity: 1;
+}
+
+/* Card End */
