@@ -300,7 +300,7 @@ a {
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.card:hover img {
+.card-animation:hover img {
   filter: blur(4px);
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -341,7 +341,7 @@ a {
   border-color: #00a38c !important;
 }
 
-.card:hover .card-btn {
+.card-animation:hover .card-btn {
   opacity: 1;
 }
 

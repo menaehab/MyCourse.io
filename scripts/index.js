@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
   recommendedData.forEach((course) => {
     const recommendedCard = `
       <div class="swiper-slide">
-        <div class="card p-3">
+        <div class="card p-3 card-animation">
         <div class="card-img">
         <a href="#" class="card-btn">Show More</a>
         <img src="${course.image}" class="rounded-4 w-100" alt="${course.name}">
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
   trendingData.forEach((course) => {
     const trendingCard = `
       <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card p-3">
+        <div class="card p-3 card-animation">
           <div class="card-img">
             <a href="#" class="card-btn">Show More</a>
             <img src="${course.image}" class="rounded-4 w-100" alt="${
