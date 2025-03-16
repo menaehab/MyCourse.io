@@ -1,95 +1,108 @@
 /* start unpaidsec1 */
 .unpaid-card {
-    flex-wrap: nowrap;
-    padding: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 2px 2px #0000000d;
-    border: none;
-  }
-   
-  .unpaid-img-top {
-    margin-bottom: 20px;
-  }
-   
-  .unpaid-card-title {
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-   
-  .unpaid-icon1 {
-    margin: 0 10px;
-    color: #00ddc0;
-    margin-bottom: 5px;
-  }
-   
-  .unpaid-icon1 span {
-    margin-left: 3px;
-    color: #1b1b1b99;
-  }
-   
-  .price {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-   
-  .old-price {
-    color: #1b1b1b99;
-    font-size: 15px;
-    margin-left: 10px;
-  }
-   
-  .offer {
-    background-color: #a04ae3;
-    color: #1b1b1b99;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 15px;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
-   
-  .unpaid-btn-buy {
-    display: grid;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 20px;
-    justify-content: center;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-   
-  .unpaid-btn-wishlist {
-    display: grid;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 35px;
-    justify-content: center;
-    border-radius: 15px;
-    font-size: 20px;
-    border-color: #1b1b1b99;
-    color: #1b1b1b99;
-  }
-   
-  .unpaid-icon2 {
-    margin-top: 20px;
-    margin-bottom: 12px;
-    margin-right: 10px;
-  }
-   
-  .unpaid-text-icon {
-    color: #1b1b1b99;
-    font-size: 1.1rem;
-  }
-   
-  .card {
-    margin-top: 20px;
-  }
-  /* end unpaidsec1 */
+  flex-wrap: nowrap;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 2px 2px #0000000d;
+  border: none;
+}
+
+.unpaid-img-top {
+  margin-bottom: 20px;
+}
+
+.unpaid-card-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.unpaid-icon1 {
+  margin: 0 10px;
+  color: #00ddc0;
+  margin-bottom: 5px;
+}
+
+.unpaid-icon1 span {
+  margin-left: 3px;
+  color: #1b1b1b99;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.old-price {
+  color: #1b1b1b99;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.offer {
+  background-color: #a04ae3;
+  color: #1b1b1b99;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: rgb(240, 240, 240);
+}
+
+.unpaid-btn-buy {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.unpaid-btn-wishlist {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 35px;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 20px;
+  border-color: #1b1b1b99;
+  color: #1b1b1b99;
+}
+
+.unpaid-icon2 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+}
+
+.unpaid-text-icon {
+  color: #1b1b1b99;
+  font-size: 1.1rem;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.unpaid-img-card {
+  border: none;
+}
+
+.unpaid-card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* end unpaidsec1 */
