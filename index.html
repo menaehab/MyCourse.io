@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue JS Course</title>
+    <title>Vue JS Course - Learn Vue.js from Scratch</title>
+    <meta name="description"
+        content="Learn Vue.js from scratch with this comprehensive course. Watch videos, follow the curriculum, and master Vue.js.">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,7 +18,8 @@
             <div class="video-section">
                 <video controls>
                     <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    <p>Your browser does not support the video tag. You can <a href="video.mp4">download the video
+                            here</a>.</p>
                 </video>
                 <h2>VUE JS SCRATCH COURSE</h2>
                 <p>by <span class="author">ELPoP</span></p>
@@ -28,7 +31,8 @@
 
             <!-- Course Curriculum Section -->
             <div class="curriculum">
-                <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview<span class="arrow">▶</span></h3>
+                <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview<span class="arrow">▶</span>
+                </h3>
                 <ul id="chapter1" class="curriculum-list">
                     <li>Intro Video - 5 min</li>
                 </ul>
@@ -52,7 +56,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
