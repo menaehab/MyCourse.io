@@ -91,14 +91,58 @@
 
     <!-- start course page -->
 
+    <div class="container my-4">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="course-container">
+                    <!-- Video and Curriculum Container -->
+                    <div class="top-section">
+                        <!-- Video Section -->
+                        <div class="video-section">
+                            <video controls>
+                                <source src="video.mp4" type="video/mp4">
+                                <p>Your browser does not support the video tag. You can <a href="video.mp4">download the
+                                        video
+                                        here</a>.</p>
+                            </video>
+                            <h2>VUE JS SCRATCH COURSE</h2>
+                            <p>by <span class="author">ELPoP</span></p>
+                            <div class="stats">
+                                <span>👍 20.3k</span>
+                                <span>👁 30.4k</span>
+                            </div>
+                        </div>
+
+                        <!-- Course Curriculum Section -->
+                        <!-- <div class="curriculum">
+                                <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview<span class="arrow">▶</span>
+                                </h3>
+                                <ul id="chapter1" class="curriculum-list">
+                                    <li>Intro Video - 5 min</li>
+                                </ul>
+                                
+                                <h3 onclick="toggleSection('chapter2', this)"> Chapter 2: Curriculum<span class="arrow">▶</span></h3>
+                                <ul id="chapter2" class="curriculum-list">
+                                    <li>Understanding Vue.js</li>
+                                    <li>Vue Components</li>
+                                    <li>Vue Templating</li>
+                                    <li>Data Binding</li>
+                                    <li>Vue Routing</li>
+                                </ul>
+                
+                                <h3 onclick="toggleSection('chapter3', this)">Chapter 3: Components<span class="arrow">▶</span></h3>
+                                <ul id="chapter3" class="curriculum-list">
+                                    <li>Single File Components</li>
+                                    <li>Props and Events</li>
+                                    <li>Lifecycle Hooks</li>
+                                </ul>
+                            </div> -->
+                    </div>
+                </div>
 
 
-    <!-- Reviews Section Start -->
-    <section id="reviews">
-        <div class="container my-4">
-            <div class="row align-items-center">
-                <!-- Left: About Course Text -->
-                <div class="col-md-7">
+                <section id="reviews">
+                    <!-- Left: About Course Text -->
                     <hr class="my-4">
                     <h2>About Course</h2>
                     <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
@@ -132,7 +176,7 @@
                             <div class="review-card d-flex align-items-start p-3">
                                 <img src="imgs/Mask-1.png" alt="User Profile" class="review-avatar">
                                 <div class="review-content ms-3">
-                                    <h4>Sara Doe    </h4>
+                                    <h4>Sara Doe </h4>
                                     <p>I loved the course, it had been a long time since I had experimented with
                                         watercolors and
                                         now I will do it more often thanks to Kitani Studio</p>
@@ -177,20 +221,68 @@
                         data-swiper-slide-index="1" style="width: 155px; margin-left: 200px; margin-bottom: 35px;">
                         <a href="#" class="btn btn-categories btn-outline-secondary rounded-4">load more reviews</a>
                     </div>
-                </div>
-
-                <!-- Right: Image Column -->
-                <div class="col-md-5 text-center">
-                    <img src="imgs/Portrait Image.png" alt="" class="img-fluid review-side-image">
-                </div>
             </div>
 
-            <!-- ----- -->
+            <!-- Right: Image Column -->
+            <div class="col-md-5 text-center">
+                <div class="course-container">
+                    <!-- Video and Curriculum Container -->
+                    <div class="top-section">
+                        <!-- Video Section -->
+                        <!-- <div class="video-section">
+                                <video controls>
+                                    <source src="video.mp4" type="video/mp4">
+                                    <p>Your browser does not support the video tag. You can <a href="video.mp4">download the video
+                                            here</a>.</p>
+                                </video>
+                                <h2>VUE JS SCRATCH COURSE</h2>
+                                <p>by <span class="author">ELPoP</span></p>
+                                <div class="stats">
+                                    <span>👍 20.3k</span>
+                                    <span>👁 30.4k</span>
+                                </div>
+                            </div> -->
 
+                        <!-- Course Curriculum Section -->
+                        <div class="curriculum">
+                            <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview<span
+                                    class="arrow">▶</span></h3>
+                            <ul id="chapter1" class="curriculum-list">
+                                <li>Intro Video - 5 min</li>
+                                <li>What is Vue.js - 5 min</li>
+                                <li>Vue Components - 5 min</li>
+                                <li>Vue Templating - 5 min</li>
+                                <li>Data Binding - 5 min</li>
+                            </ul>
+
+                            <h3 onclick="toggleSection('chapter2', this)"> Chapter 2: Curriculum<span
+                                    class="arrow">▶</span></h3>
+                            <ul id="chapter2" class="curriculum-list">
+                                <li>Understanding Vue.js</li>
+                                <li>Vue Components</li>
+                                <li>Vue Templating</li>
+                                <li>Data Binding</li>
+                                <li>Vue Routing</li>
+                            </ul>
+
+                            <h3 onclick="toggleSection('chapter3', this)">Chapter 3: Components<span
+                                    class="arrow">▶</span></h3>
+                            <ul id="chapter3" class="curriculum-list">
+                                <li>Single File Components</li>
+                                <li>Props and Events</li>
+                                <li>Lifecycle Hooks</li>
+                                <li>Composition API</li>
+                                <li>Vue Router</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="imgs/Portrait Image.png" alt="" class="img-fluid review-side-image">
+            </div>
         </div>
-    </section>
-    <!-- Reviews Section End -->
 
+    </div>
+    </section>
 
     <!-- end course page -->
 
@@ -217,7 +309,6 @@
     </section>
 
     <!-- news letter End -->
-
 
     <!-- Footer -->
     <footer class="text-center text-lg-start footer-color text-muted pt-1 mt-3">
@@ -338,6 +429,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/layout.js"></script>
+    <script src="./scripts/course-page.js" defer></script>
 </body>
 
 </html>
