@@ -40,6 +40,12 @@ body {
     object-fit: cover;
 }
 
+.review-date {
+    font-size: 12px;
+    color: rgba(150, 150, 150, 0.6);
+    margin-bottom: 5px;
+}
+
 .review-content {
     flex: 1;
 }
@@ -108,7 +114,7 @@ h2 {
     padding: 15px;
     /* border-radius: 10px; */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-top: -260px;
+    margin-top: -333px;
     transition: margin-top 0.3s;
 }
 
