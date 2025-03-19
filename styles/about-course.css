@@ -106,3 +106,32 @@
 }
 
 /* end unpaidsec1 */
+ 
+
+/*section aboutcourse-*/
+ 
+/*start details aboutcourse*/
+.aboutcourse_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3dcbb1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.aboutcourse_pragraph {
+  font-size: 1.2rem;
+  color: #666;
+  display: grid;
+}
+ 
+.about-course-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-course-img img {
+  width: 80%;
+}
+ 
+/*end details about course*/
