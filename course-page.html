@@ -76,7 +76,6 @@
                         <input type="text" placeholder="Search for course">
                         <i class="fas fa-search"></i>
                     </div>
-
                     <!-- Navigation Items -->
                     <div class="navbar-group-list">
                         <div class="navbar-group-item p-2"><a href="#">Cart</a></div>
@@ -90,167 +89,34 @@
     </nav>
 
     <!-- start course page -->
-
     <div class="container my-4">
-        <div class="row align-items-center">
+        <div class="row ">
             <div class="col-md-7">
                 <div class="course-container">
-                    <!-- Video and Curriculum Container -->
                     <div class="top-section">
-                        <!-- Video Section -->
                         <div class="video-section">
                             <video controls>
                                 <source src="video.mp4" type="video/mp4">
                                 <p>Your browser does not support the video tag. You can <a href="video.mp4">download the
-                                        video
-                                        here</a>.</p>
+                                        video here</a>.</p>
                             </video>
                             <h2>VUE JS SCRATCH COURSE</h2>
-                            <p>by <span class="author">ELPoP</span></p>
-                            <div class="stats">
-                                <span>👍 20.3k</span>
-                                <span>👁 30.4k</span>
+                            <p>by <span class="author text-primary">ELPoP</span></p>
+                            <div class="stats mb-2">
+                                <span><i class="fas fa-heart text-primary"></i> 20.3k</span>
+                                <span><i class="fas fa-eye text-primary"></i> 30.4k</span>
                             </div>
                         </div>
-
-                        <!-- Course Curriculum Section -->
-                        <!-- <div class="curriculum">
-                                <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview<span class="arrow">▶</span>
-                                </h3>
-                                <ul id="chapter1" class="curriculum-list">
-                                    <li>Intro Video - 5 min</li>
-                                </ul>
-                                
-                                <h3 onclick="toggleSection('chapter2', this)"> Chapter 2: Curriculum<span class="arrow">▶</span></h3>
-                                <ul id="chapter2" class="curriculum-list">
-                                    <li>Understanding Vue.js</li>
-                                    <li>Vue Components</li>
-                                    <li>Vue Templating</li>
-                                    <li>Data Binding</li>
-                                    <li>Vue Routing</li>
-                                </ul>
-                
-                                <h3 onclick="toggleSection('chapter3', this)">Chapter 3: Components<span class="arrow">▶</span></h3>
-                                <ul id="chapter3" class="curriculum-list">
-                                    <li>Single File Components</li>
-                                    <li>Props and Events</li>
-                                    <li>Lifecycle Hooks</li>
-                                </ul>
-                            </div> -->
                     </div>
                 </div>
-
-
-                <section id="reviews">
-                    <!-- Left: About Course Text -->
-                    <hr class="my-4">
-                    <h2>About Course</h2>
-                    <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
-                        Unlike
-                        other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.
-                        The
-                        core library is focused on the view layer only, and is easy to pick up and integrate with other
-                        libraries or existing projects. On the other hand, Vue is also perfectly capable of powering
-                        sophisticated Single-Page Applications when used in combination with modern tooling and
-                        supporting
-                        libraries.</p>
-                    <hr class="my-4">
-                    <h2>Reviews</h2>
-
-                    <!-- Left: Reviews Column -->
-                    <div class="row">
-                        <!-- Review 1 -->
-                        <div class="col-md-12">
-                            <div class="review-card d-flex align-items-start p-3">
-                                <img src="imgs/profile-pics/Square.jpg" alt="User Profile" class="review-avatar">
-                                <div class="review-content ms-3">
-                                    <h4>Leonardo Da Vinci</h4>
-                                    <p class="review-date">January 15, 2023</p>
-                                    <p>Loved the course. I've learned some very subtle tecniques, expecially on leaves.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 2 -->
-                        <div class="col-md-12">
-                            <div class="review-card d-flex align-items-start p-3">
-                                <img src="imgs/profile-pics/Mask-1.jpg" alt="User Profile" class="review-avatar">
-                                <div class="review-content ms-3">
-                                    <h4>Sara Doe </h4>
-                                    <p class="review-date">February 10, 2023</p>
-                                    <p>I loved the course, it had been a long time since I had experimented with
-                                        watercolors and
-                                        now I will do it more often thanks to Kitani Studio</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 3 -->
-                        <div class="col-md-12">
-                            <div class="review-card d-flex align-items-start p-3">
-                                <img src="imgs/profile-pics/Mask-2.jpg" alt="User Profile" class="review-avatar">
-                                <div class="review-content ms-3">
-                                    <h4>Titania Smith</h4>
-                                    <p class="review-date">March 5, 2023</p>
-                                    <p>Yes. I just emphasize that the use of Photoshop, for non-users, becomes difficult
-                                        to
-                                        follow. What requires a course to master it. Safe and very didactic teacher.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 4 -->
-                        <div class="col-md-12">
-                            <div class="review-card d-flex align-items-start p-3">
-                                <img src="imgs/profile-pics/Mask.png" alt="User Profile" class="review-avatar">
-                                <div class="review-content ms-3">
-                                    <h4>Miphoska</h4>
-                                    <p class="review-date">April 20, 2023</p>
-                                    <p>I haven't finished the course yet, as I would like to have some feedback from the
-                                        teacher, about the comments I shared on the forum 3 months ago, and I still
-                                        haven't
-                                        had
-                                        any answer.
-                                        I think the course is well structured, however the explanations and videos are
-                                        very
-                                        quick for beginners. However, it is good to go practicing.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Load More Button -->
-                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 8"
-                        data-swiper-slide-index="1" style="width: 155px; margin-left: 200px; margin-bottom: 35px;">
-                        <a href="#" class="btn btn-categories btn-outline-secondary rounded-4" id="loadMoreReviews">load more reviews</a>
-                    </div>
             </div>
 
-            <!-- Right: Image Column -->
             <div class="col-md-5 text-center">
                 <div class="course-container">
-                    <!-- Video and Curriculum Container -->
                     <div class="top-section">
-                        <!-- Video Section -->
-                        <!-- <div class="video-section">
-                                <video controls>
-                                    <source src="video.mp4" type="video/mp4">
-                                    <p>Your browser does not support the video tag. You can <a href="video.mp4">download the video
-                                            here</a>.</p>
-                                </video>
-                                <h2>VUE JS SCRATCH COURSE</h2>
-                                <p>by <span class="author">ELPoP</span></p>
-                                <div class="stats">
-                                    <span>👍 20.3k</span>
-                                    <span>👁 30.4k</span>
-                                </div>
-                            </div> -->
-
-                        <!-- Course Curriculum Section -->
                         <div class="curriculum">
-                            <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview<span
-                                    class="arrow">▶</span></h3>
+                            <h3 onclick="toggleSection('chapter1', this)">Chapter 1: Course Overview <i
+                                    class="fa-solid fa-chevron-right arrow"></i></h3>
                             <ul id="chapter1" class="curriculum-list">
                                 <li>Intro Video - 5 min</li>
                                 <li>What is Vue.js - 5 min</li>
@@ -258,9 +124,8 @@
                                 <li>Vue Templating - 5 min</li>
                                 <li>Data Binding - 5 min</li>
                             </ul>
-
-                            <h3 onclick="toggleSection('chapter2', this)"> Chapter 2: Curriculum<span
-                                    class="arrow">▶</span></h3>
+                            <h3 onclick="toggleSection('chapter2', this)">Chapter 2: Curriculum <i
+                                    class="fa-solid fa-chevron-right arrow"></i></h3>
                             <ul id="chapter2" class="curriculum-list">
                                 <li>Understanding Vue.js</li>
                                 <li>Vue Components</li>
@@ -268,9 +133,8 @@
                                 <li>Data Binding</li>
                                 <li>Vue Routing</li>
                             </ul>
-
-                            <h3 onclick="toggleSection('chapter3', this)">Chapter 3: Components<span
-                                    class="arrow">▶</span></h3>
+                            <h3 onclick="toggleSection('chapter3', this)">Chapter 3: Components <i
+                                    class="fa-solid fa-chevron-right arrow"></i></h3>
                             <ul id="chapter3" class="curriculum-list">
                                 <li>Single File Components</li>
                                 <li>Props and Events</li>
@@ -281,12 +145,72 @@
                         </div>
                     </div>
                 </div>
-                <img src="imgs/Portrait Image.png" alt="" class="img-fluid review-side-image">
             </div>
         </div>
 
+        <div class="row ">
+            <div class="col-md-7">
+                <section id="reviews">
+                    <hr class="my-4">
+                    <h2>About Course</h2>
+                    <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
+                        Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally
+                        adoptable. The core library is focused on the view layer only, and is easy to pick up and
+                        integrate with other libraries or existing projects. On the other hand, Vue is also perfectly
+                        capable of powering sophisticated Single-Page Applications when used in combination with modern
+                        tooling and supporting libraries.</p>
+                    <hr class="my-4">
+                    <h2>Reviews</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="review-card d-flex p-3">
+                                <img src="imgs/profile-pics/avatar6.jpg" alt="User Profile" class="review-avatar">
+                                <div class="review-content ms-3">
+                                    <h4>Elisabeth</h4>
+                                    <p class="review-date">January 15, 2023</p>
+                                    <p>Loved the course. I've learned some very subtle techniques, especially on leaves.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="review-card d-flex align-items-start p-3">
+                                <img src="imgs/profile-pics/avatar.jpg" alt="User Profile" class="review-avatar">
+                                <div class="review-content ms-3">
+                                    <h4>Marley</h4>
+                                    <p class="review-date">February 10, 2023</p>
+                                    <p>I loved the course, it had been a long time since I had experimented with
+                                        watercolors...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="review-card d-flex align-items-start p-3">
+                                <img src="imgs/profile-pics/avatar1.jpg" alt="User Profile" class="review-avatar">
+                                <div class="review-content ms-3">
+                                    <h4>Leonardo</h4>
+                                    <p class="review-date">March 5, 2023</p>
+                                    <p>Yes. I just emphasize that the use of Photoshop, for non-users, becomes
+                                        difficult...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4 mb-4">
+                        <a href="#" class="btn btn-categories btn-outline-secondary rounded-4" id="loadMoreReviews">Show
+                            More</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-md-5 text-center">
+                <img src="imgs/Portrait Image.png" alt="" class="img-fluid review-side-image">
+            </div>
+        </div>
     </div>
-    </section>
+
+
 
     <!-- end course page -->
 
