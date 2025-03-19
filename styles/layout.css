@@ -346,3 +346,72 @@ a {
 }
 
 /* Card End */
+
+/* Loader Start */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  border: 6px solid;
+  border-color: #fff #fff transparent transparent;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 6px solid;
+  border-color: transparent transparent #00ddc0 #00ddc0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  animation: rotationBack 0.5s linear infinite;
+}
+
+.loader::before {
+  width: 48px;
+  height: 48px;
+  border-color: #fff #fff transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Loader End */
