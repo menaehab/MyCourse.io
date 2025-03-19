@@ -1,9 +1,9 @@
 body {
     color: rgba(27, 27, 27, 0.6);
     /* font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%; */
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%; */
 }
 
 .review-content h4 {
@@ -14,7 +14,7 @@ body {
     letter-spacing: 0%;
 }
 
-.col-md-7 h2 { 
+.col-md-7 h2 {
     font-size: 24px;
     line-height: 45px;
     font-weight: 700;
@@ -61,19 +61,19 @@ body {
 /* Omar Section */
 
 /* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-} */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+  } */
 
 .course-container {
     max-width: 1000px;
     /* margin: 20px auto;
-    padding: 20px; */
+      padding: 20px; */
     /* background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .top-section {
@@ -97,7 +97,6 @@ h2 {
 }
 
 .author {
-    color: #28a745;
     font-weight: bold;
 }
 
@@ -112,10 +111,12 @@ h2 {
     width: 100%;
     background: #f4f4f4;
     padding: 15px;
-    /* border-radius: 10px; */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-top: -333px;
     transition: margin-top 0.3s;
+    -webkit-transition: margin-top 0.3s;
+    -moz-transition: margin-top 0.3s;
+    -ms-transition: margin-top 0.3s;
+    -o-transition: margin-top 0.3s;
 }
 
 .curriculum h3 {
@@ -131,7 +132,13 @@ h2 {
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    transition: background 0.3s ;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 .curriculum h3:hover {
