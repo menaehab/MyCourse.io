@@ -1,0 +1,14 @@
+.form-select:focus {
+    box-shadow: none !important;
+    outline: none;
+    border-color: #00b49b;
+}
+
+.page-link {
+    color: #00b49b !important;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+    outline: none;
+}
