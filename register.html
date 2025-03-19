@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/authentication.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Creat an Account</h2>
+            <form id="registerForm">
+                <!-- <label for="name">Enter Your Name</label> -->
+                <input type="text"  id="name" placeholder="Name" required>
+                <!-- <label for="registerEmail">Enter Your Email </label> -->
+                <input type="email" id="registerEmail" placeholder="Email" required >
+                <!-- <label for="registerPassword">Enter Password</label> -->
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <!-- <label for="usertype">User Type</label> -->
+                <!-- <select id="usertype">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select> -->
+                <button id="signup"  type="submit">Sign Up</button>
+            </form>
+            <p>Already have Account ? <a href="login.html">Login Now</a></p>
+        </div>
+    </div>
+    <script src="scripts/register.js"></script>
+</body>
+</html>

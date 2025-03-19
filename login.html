@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/authentication.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="logo">MyCourse.io</h2>
+            <p class="discreipe">Join us and get more benefits. We promise to keep your data safely. </p>
+            <form id="loginForm">
+                <!-- <label for="loginEmail">E<i class="fa-solid fa-envelope"></i> </label> -->
+                <input type="email" id="loginEmail" required placeholder="Email">
+                <!-- <label for="loginPassword">Enter Password</label> -->
+                <input type="password" id="loginPassword" required placeholder="password">
+                <button onclick=" loginChack()" id="login" type="submit">Login</button>
+            </form>
+            <p>Don't have Account ?<a href="../register.html"> Register Now</a></p>
+            <p>or you can</p>
+
+            <div class="social-login">
+                <!-- <a href="https://www.facebook.com/" target="_blank">
+                    <button class="facebook"><i class="fab fa-facebook-f"></i> Continue with Facebook</button>
+                </a>
+                <a href="#">
+                    <button class="apple"><i class="fab fa-apple"></i> Continue with Apple</button>
+                </a>
+                <a href="https://www.google.com">
+                    <button class="google"><i class="fab fa-google"></i> Continue with Google</button>
+                </a> -->
+                <button class="facebook"><i class="fab fa-facebook-f"></i> Continue with Facebook</button>
+                <button class="apple"><i class="fab fa-apple"></i> Continue with Apple</button>
+                <button class="google"><i class="fab fa-google"></i> Continue with Google</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
