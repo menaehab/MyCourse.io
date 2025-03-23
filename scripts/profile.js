@@ -1,38 +1,63 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-    const firstNameInput = document.getElementById("firstName");
-    const lastNameInput = document.getElementById("lastName");
-    const headlineInput = document.getElementById("headline");
-    const languageSelect = document.getElementById("language");
-    const linkInput = document.getElementById("link");
-    const saveButton = document.querySelector(".save-btn");
-    const profilePic = document.querySelector(".profile-pic-big");
-
-    firstNameInput.value = localStorage.getItem("firstName") || "";
-    lastNameInput.value = localStorage.getItem("lastName") || "";
-    headlineInput.value = localStorage.getItem("headline") || "";
-    languageSelect.value = localStorage.getItem("language") || "English";
-    linkInput.value = localStorage.getItem("link") || "";
-
-    saveButton.addEventListener("click", function (event) {
-        event.preventDefault()
-
-        localStorage.setItem("firstName", firstNameInput.value);
-        localStorage.setItem("lastName", lastNameInput.value);
-        localStorage.setItem("headline", headlineInput.value);
-        localStorage.setItem("language", languageSelect.value);
-        localStorage.setItem("link", linkInput.value);
-
-        alert("✅ Data saved successfully!");
-    });
-
-    profilePic.addEventListener("click", function () {
-        const newPic = prompt("Enter the URL of your new profile picture:");
-        if (newPic) {
-            profilePic.src = newPic;
-            localStorage.setItem("profilePic", newPic);
-        }
-    });
-
-    profilePic.src = localStorage.getItem("profilePic") || "images/profile.jpg";
+  const savedData = JSON.parse(localStorage.getItem("userData"));
+  if (savedData) {
+    document.getElementById("firstName").value = savedData.firstName || "";
+    document.getElementById("lastName").value = savedData.lastName || "";
+    document.getElementById("headline").value = savedData.headline || "";
+    document.getElementById("language").value = savedData.language || "English";
+    document.getElementById("link").value = savedData.link || "";
+  }
 });
+
+document
+  .getElementById("userForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let isValid = true;
+
+    const firstName = document.getElementById("firstName").value.trim();
+    const lastName = document.getElementById("lastName").value.trim();
+    const headline = document.getElementById("headline").value.trim();
+    const language = document.getElementById("language").value;
+    const link = document.getElementById("link").value.trim();
+
+    if (!firstName) {
+      document.getElementById("firstNameError").style.display = "block";
+      isValid = false;
+    } else {
+      document.getElementById("firstNameError").style.display = "none";
+    }
+
+    if (!lastName) {
+      document.getElementById("lastNameError").style.display = "block";
+      isValid = false;
+    } else {
+      document.getElementById("lastNameError").style.display = "none";
+    }
+
+    if (!headline) {
+      document.getElementById("headlineError").style.display = "block";
+      isValid = false;
+    } else {
+      document.getElementById("headlineError").style.display = "none";
+    }
+
+    if (isValid) {
+      const userData = {
+        firstName,
+        lastName,
+        headline,
+        language,
+        link
+      };
+      localStorage.setItem("userData", JSON.stringify(userData));
+
+      const successAlert = document.getElementById("successAlert");
+      successAlert.style.display = "block";
+
+      setTimeout(() => {
+        successAlert.style.display = "none";
+      }, 3000);
+    }
+  });
