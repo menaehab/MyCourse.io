@@ -1,8 +1,11 @@
-
 .custom-select {
-    max-width: 120px; 
-    font-size: 14px; 
-    padding: 5px 10px;
-  }
-  
-  
+  max-width: 220px;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+  outline: none;
+  border-color: #00b49b;
+}
