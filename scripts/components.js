@@ -6,7 +6,7 @@ navbar.innerHTML = `
 <nav class="navbar d-flex justify-content-between align-items-center">
         <!-- Left -->
         <div class="d-flex align-items-center">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="imgs/Logo.png" alt="">
             </a>
             <div class="dropdown">
@@ -14,8 +14,10 @@ navbar.innerHTML = `
                     Browse
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Page 1</a></li>
-                    <li><a class="dropdown-item" href="#">Page 2</a></li>
+                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="../search.html">All courses</a></li>
+                    <li><a class="dropdown-item" href="../register.html">Sign up</a></li>
+                    <li><a class="dropdown-item" href="../login.html">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -28,16 +30,16 @@ navbar.innerHTML = `
 
         <!-- Right in mid & large screens -->
         <div class="d-flex align-items-center nav-icons  d-none d-sm-flex">
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-bell"></i>
+            <i style="color: #777;" class="fas fa-shopping-cart"></i>
+            <i style="color: #777;" class="fas fa-bell"></i>
 
             <!-- Avatar Dropdown -->
             <div class="dropdown">
                 <img src="imgs/avatar.png" class="profile-img dropdown-toggle" data-bs-toggle="dropdown" alt="User">
                 <div class="navbar-profile">
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="../my-courses.html">My courses</a></li>
+                        <li><a class="dropdown-item" href="../profile.html">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                 </div>
