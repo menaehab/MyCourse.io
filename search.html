@@ -9,42 +9,43 @@
   <link rel="stylesheet" href="styles/search.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles/layout.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <div id="navbar" class="top-effect"></div>
 
-  <div class="container mt-3">
-    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
-      <select class="form-select custom-select">
+  <div class="container mt-3 top-effect">
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+      <select class="form-select custom-select w-100 w-sm-auto">
         <option selected>Programming</option>
         <option value="1">Design</option>
         <option value="2">Marketing</option>
       </select>
-      <select class="form-select custom-select">
+      <select class="form-select custom-select w-100 w-sm-auto">
         <option selected>All Duration</option>
         <option value="1">Short</option>
         <option value="2">Medium</option>
         <option value="3">Long</option>
       </select>
-      <select class="form-select custom-select">
+      <select class="form-select custom-select w-100 w-sm-auto">
         <option selected>All Level</option>
         <option value="1">Beginner</option>
         <option value="2">Intermediate</option>
         <option value="3">Advanced</option>
       </select>
-      <select class="form-select custom-select">
+      <select class="form-select custom-select w-100 w-sm-auto">
         <option selected>English</option>
         <option value="1">Spanish</option>
         <option value="2">French</option>
       </select>
-      <button class="btn btn-primary">Apply Filter</button>
+      <button class="btn btn-primary w-100 w-sm-auto">Apply Filter</button>
     </div>
   </div>
 
 
   <section id="trending">
-    <div class="container mt-4">
+    <div class="container mt-4 left-effect">
       <div class="d-md-flex justify-content-between align-items-center">
         <div class="my-courses-title">
           <h4 class="section-title mb-2">Showing 2,312 results of kitani Studio </h4>
@@ -93,11 +94,11 @@
   </section>
 
   <!-- news letter Start -->
-  <div id="news-letter"></div>
+  <div id="news-letter" class="right-effect"></div>
   <!-- news letter End -->
 
   <!-- Footer -->
-  <div id="footer"></div>
+  <div id="footer" class="fade-effect"></div>
   <!-- Footer -->
 
   <!-- Loader Start-->
