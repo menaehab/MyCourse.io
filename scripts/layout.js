@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("load", function () {
   setTimeout(function () {
     ScrollReveal().reveal(".top-effect", {
-      duration: 1500,
+      duration: 1000,
       opacity: 0,
       distance: "50px",
       easing: "ease-in-out",
@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   setTimeout(function () {
     ScrollReveal().reveal(".fade-effect", {
-      duration: 1500,
+      duration: 1000,
       opacity: 0,
       distance: 0,
       easing: "ease-in-out",
@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   setTimeout(function () {
     ScrollReveal().reveal(".left-effect", {
-      duration: 1500,
+      duration: 1000,
       opacity: 0,
       distance: "80px",
       easing: "ease-out",
@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   setTimeout(function () {
     ScrollReveal().reveal(".right-effect", {
-      duration: 1500,
+      duration: 1000,
       opacity: 0,
       distance: "80px",
       easing: "ease-out",

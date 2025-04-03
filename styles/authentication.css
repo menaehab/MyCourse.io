@@ -13,11 +13,13 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 90%;
   max-width: 400px;
@@ -26,6 +28,13 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+}
+
+.register-form {
+  margin-top: 10%;
+}
+.login-form {
+  margin-top: 5%;
 }
 
 h2 {
