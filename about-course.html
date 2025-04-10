@@ -40,8 +40,14 @@
 
     <!-- Right in mid & large screens -->
     <div class="d-flex align-items-center nav-icons  d-none d-sm-flex">
-      <i style="color: #777;" class="fas fa-shopping-cart"></i>
-      <i style="color: #777;" class="fas fa-bell"></i>
+      <a href="./cart.html"><i style="color: #777;" class="fas fa-shopping-cart"></i></a>
+      <!-- Notifications -->
+      <div class="notification-wrapper position-relative">
+        <i style="color: #777; cursor: pointer;" class="fas fa-bell"></i>
+        <div class="notification-box position-absolute">
+          No notifications
+        </div>
+      </div>
 
       <!-- Avatar Dropdown -->
       <div class="dropdown">
@@ -127,7 +133,7 @@
             </div>
             <span class="offer">20% OFF</span>
             <div class="mt-3">
-              <button type="button" class="unpaid-btn-buy btn btn-primary">BUY</button>
+              <a href="./cart.html" type="button" class="unpaid-btn-buy btn btn-primary">BUY</a>
               <a href="./wishlist.html" type="button" class="unpaid-btn-wishlist btn btn-outline-secondary">WISHLIST</a>
               <div class="unpaid-card-icons">
                 <div class="unpaid-text-icon">
