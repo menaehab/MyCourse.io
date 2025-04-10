@@ -204,6 +204,30 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-box {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: white;
+  color: #555;
+  border: 1px solid #ddd;
+  padding: 10px 55px;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.notification-wrapper:hover .notification-box {
+  display: block;
+}
+
 /* Navbar End */
 
 /* Footer Start */
