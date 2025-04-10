@@ -454,3 +454,25 @@ body {
 .pt-6 {
   padding-top: 100px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #495057;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00ddc0 #2c3237;
+}
