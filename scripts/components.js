@@ -1,7 +1,7 @@
-let footer = document.getElementById("footer");
-let newsLetter = document.getElementById("news-letter");
-
 document.addEventListener("DOMContentLoaded", () => {
+  let footer = document.getElementById("footer");
+  let newsLetter = document.getElementById("news-letter");
+
   footer.innerHTML = `
  <footer class="text-center text-lg-start footer-color text-muted pt-1 mt-3">
         <!-- Section: Links  -->
@@ -139,12 +139,4 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     </section>
 `;
-
-  let dotGrids = document.querySelectorAll(".dot-grid");
-
-  dotGrids.forEach((dotGrid) => {
-    for (let i = 0; i < 77; i++) {
-      dotGrid.innerHTML += '<div class="dot"></div>';
-    }
-  });
 });
