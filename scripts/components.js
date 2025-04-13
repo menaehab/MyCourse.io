@@ -139,4 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     </section>
 `;
+
+  let dotGrid = document.querySelector(".dot-grid");
+
+  for (let i = 0; i < 77; i++) {
+    dotGrid.innerHTML += '<div class="dot"></div>';
+  }
 });
