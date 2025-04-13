@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="card p-3 card-animation">
           <div class="card-img">
-            <a href="#" class="card-btn">Show More</a>
+            <a href="../about-course.html" class="card-btn">Show More</a>
             <img src="${course.image}" class="rounded-4 w-100" alt="${
       course.name
     }">
