@@ -502,6 +502,7 @@ body {
   display: grid;
   grid-template-columns: repeat(11, 5px);
   gap: 12px;
+  z-index: -1;
 }
 
 .dot {
