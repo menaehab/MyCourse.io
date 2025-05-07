@@ -24,3 +24,7 @@
   box-shadow: none !important;
   outline: none;
 }
+
+#trending .container {
+  background-color: white;
+}
