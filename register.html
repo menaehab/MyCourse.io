@@ -7,32 +7,30 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles/authentication.css">
     <link rel="stylesheet" href="styles/layout.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
 </head>
 
 <body>
     <div class="dot-grid left-effect" style="top: 200px; left: 4%;"></div>
-
     <div class="container register-form">
         <div class="form-container fade-effect">
-            <h2>Creat an Account</h2>
-            <form id="registerForm">
-                <!-- <label for="name">Enter Your Name</label> -->
-                <input type="text" id="name" placeholder="Name" required>
-                <!-- <label for="registerEmail">Enter Your Email </label> -->
-                <input type="email" id="registerEmail" placeholder="Email" required>
-                <!-- <label for="registerPassword">Enter Password</label> -->
-                <input type="password" id="registerPassword" placeholder="Password" required>
-                <!-- <label for="usertype">User Type</label> -->
-                <!-- <select id="usertype">
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>
-                </select> -->
+            <h2>Create an Account</h2>
+            <form id="registerForm" aria-labelledby="register-form-title">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name" aria-label="Full Name">
+                    <p class="error-message"></p>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="registerEmail" placeholder="Email" aria-label="Email Address">
+                    <p class="error-message"></p>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="registerPassword" placeholder="Password" aria-label="Password">
+                    <p class="error-message"></p>
+                </div>
                 <button id="signup" type="submit">Sign Up</button>
             </form>
-            <p>Already have Account ? <a href="login.html">Login Now</a></p>
+            <p>Already have an account? <a href="login.html">Login Now</a></p>
         </div>
     </div>
     <div class="dot-grid right-effect" style="top: 600px; right: 5%;"></div>

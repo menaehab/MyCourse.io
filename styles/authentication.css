@@ -6,14 +6,18 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  height: 100vh;
+  height: 100%;
+  margin: 0;
+}
+
+body {
   background: #f6f5f7;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  margin: 0;
 }
 
 .container {
@@ -21,20 +25,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
   max-width: 400px;
+  width: 100%;
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-}
-
-.register-form {
-  margin-top: 10%;
-}
-.login-form {
-  margin-top: 5%;
 }
 
 h2 {
@@ -58,6 +55,12 @@ input {
   outline: none;
   margin: 10px 0;
   border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 2px solid #18c79c;
 }
 
 button {
@@ -71,6 +74,10 @@ button {
   cursor: pointer;
   transition: 0.3s;
   margin-top: 10px;
+}
+
+button:hover {
+  background-color: #16b78d;
 }
 
 button:active {
@@ -138,16 +145,30 @@ a {
   border: 2px solid red;
 }
 
+.input-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  min-width: 500px;
+}
+
 .error-message {
   color: red;
   font-size: 0.9em;
+  min-height: 8px;
   margin-top: 5px;
 }
 
-/* reponsive */
-@media (min-width: 768px) {
+/* Responsive */
+
+@media (max-width: 768px) {
   .container {
     max-width: 500px;
+  }
+  .input-group input {
+    min-width: 250px;
   }
 }
 
