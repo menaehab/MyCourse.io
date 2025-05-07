@@ -62,7 +62,7 @@ function loginCheck(event) {
   );
   if (user) {
     alert("Login successful");
-    // Redirect logic goes here
+    window.location.href = "./index.html";
   } else {
     showError(loginEmail, "Invalid email or password");
   }

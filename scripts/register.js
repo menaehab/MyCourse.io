@@ -75,5 +75,5 @@ registerForm.addEventListener("submit", function (event) {
   localStorage.setItem("userData", JSON.stringify(data));
 
   alert(`Welcome to our website, ${username}`);
-  window.location.href = "./loginpage/login.html";
+  window.location.href = "./login.html";
 });
