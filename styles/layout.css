@@ -285,7 +285,19 @@ a {
     max-width: 100%;
   }
 }
-
+@media (max-width: 992px) {
+  #news-letter h3 {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  #news-letter p {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .news-container {
+    padding-right: 40px;
+  }
+}
 .news-input input::placeholder {
   color: #dfdfdf;
 }
