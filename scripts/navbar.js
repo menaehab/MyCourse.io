@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <nav class="navbar d-flex justify-content-between align-items-center">
         <!-- Left -->
         <div class="d-flex align-items-center">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="./../index.html">
                 <img src="imgs/Logo.png" alt="">
             </a>
             <div class="dropdown">
@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     Browse
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                    <li><a class="dropdown-item" href="../search.html">All courses</a></li>
-                    <li><a class="dropdown-item" href="../register.html">Sign up</a></li>
-                    <li><a class="dropdown-item" href="../login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="./../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./../search.html">All courses</a></li>
+                    <li><a class="dropdown-item" href="./../register.html">Sign up</a></li>
+                    <li><a class="dropdown-item" href="./../login.html">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="imgs/avatar.png" class="profile-img dropdown-toggle" data-bs-toggle="dropdown" alt="User">
                 <div class="navbar-profile">
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../my-courses.html">My courses</a></li>
-                        <li><a class="dropdown-item" href="../profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="./../my-courses.html">My courses</a></li>
+                        <li><a class="dropdown-item" href="./../profile.html">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                 </div>
@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <!-- Navigation Items -->
                     <div class="navbar-group-list">
-                        <div class="navbar-group-item p-2"><a href="../my-courses.html">My Courses</a></div>
-                        <div class="navbar-group-item p-2"><a href="../profile.html">Profile</a></div>
+                        <div class="navbar-group-item p-2"><a href="./../my-courses.html">My Courses</a></div>
+                        <div class="navbar-group-item p-2"><a href="./../profile.html">Profile</a></div>
                         <div class="navbar-group-item p-2"><a href="#">Logout</a></div>
                     </div>
                 </div>
